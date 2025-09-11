@@ -3,7 +3,7 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { useEffect } from "react"; // Added this import
+import { useEffect } from "react";
 import NotFound from "@/pages/not-found";
 import Scoreboard from "@/pages/scoreboard";
 
@@ -17,23 +17,24 @@ function Router() {
 }
 
 function App() {
-  // Add this function to send height to parent window
   const sendHeightToParent = () => {
+    console.log('Attempting to send height to parent'); // Debug message
     setTimeout(() => {
       const height = document.documentElement.scrollHeight;
+      console.log('Sending height:', height); // Debug message
       window.parent.postMessage({ type: 'resize', height: height }, '*');
     }, 100);
   };
 
-  // Add these useEffect hooks
   useEffect(() => {
-    sendHeightToParent(); // Send height on initial load
+    console.log('App component mounted'); // Debug message
+    sendHeightToParent();
   }, []);
 
   useEffect(() => {
-    // Send height periodically to catch any data updates
-    const timer = setInterval(sendHeightToParent, 2000); // Check every 2 seconds
-    return () => clearInterval(timer); // Cleanup on unmount
+    console.log('Setting up height interval'); // Debug message
+    const timer = setInterval(sendHeightToParent, 2000);
+    return () => clearInterval(timer);
   }, []);
 
   return (
