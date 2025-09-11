@@ -22,7 +22,19 @@ function App() {
     setTimeout(() => {
       const height = document.documentElement.scrollHeight;
       console.log('Sending height:', height); // Debug message
-      window.parent.postMessage({ type: 'resize', height: height }, '*');
+      
+      // Try multiple possible origins for IdahoStatesman.com
+      const possibleOrigins = [
+        'https://www.idahostatesman.com',
+        'https://idahostatesman.com',
+        'https://staging.idahostatesman.com', // In case they use staging
+        '*' // Fallback
+      ];
+      
+      possibleOrigins.forEach(origin => {
+        console.log('Sending to origin:', origin);
+        window.parent.postMessage({ type: 'resize', height: height }, origin);
+      });
     }, 100);
   };
 
