@@ -22,7 +22,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Fetch fresh data
       const response = await fetch(
-        "https://script.googleusercontent.com/a/macros/idahostatesman.com/echo?user_content_key=AehSKLhVxGyRR-hys4Yvx7kzXDeyEDE6wN9wRnTQQRALsB8PE6yLkO4HEuMADAF6s8bbYDEnuyFzlqGVsclgai65JIPTt2lG4-7OjKmsFwVbpyuCCbGRIY6OtOPC2oFAsNXL8tEe1_7At93v5TbJC716YGUFaHfeo1UZ8sq8sWPrziLyC9DVxOSMmTceNGKMizU98xS08Jy9kpUL_RofeqY4mq4euWo-krFJemapi4gP-SrF21KOClqRWhgLFK8-wNEfAr9wmBnfvUyjC8At5EqqcBSJMKSn9PF2OZ01sigNhJXYPHdvGHTttsBbo5hz2g&lib=MrNG-yONKM4TLUAB2VieHRrV78Ddeyst8"
+        "https://script.googleusercontent.com/a/macros/idahostatesman.com/echo?user_content_key=AehSKLi6DkmGxJOw6wuQPzPXQy38HxI7gITPYd3hxYJ1vnbDy1pLnYXPskYSxExpIlMQTnzOyyd4Nph4CZrBChJ9YnmiJD1pr2uY12LT5T37_MVNSweoIWGX3bZ-9x7odKMS_Ym1W9WZso-qyi2EsAwhP-br9o2WrkcVLEaim4NCUbD7mXY4KVeizdMlBWJjmPHHUQObjGDEgz9TOy8uXgE0WMcpVgzLZJGjpWXiWnziw3UyoDUlBRrC_TxhMOLYYGtOUKCfAncfEBrbTfho3ODIgrWmNlhtaunxGJsy4-FB3PPePbrZs4T_uEI60fR6gg&lib=MrNG-yONKM4TLUAB2VieHRrV78Ddeyst8"
       );
       
       if (!response.ok) {
