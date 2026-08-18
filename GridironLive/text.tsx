@@ -8,7 +8,7 @@ const FootballScoreboard = () => {
   const [lastUpdated, setLastUpdated] = useState(null);
 
   // Your JSON URL - replace this with your actual URL
-  const JSON_URL = "https://script.googleusercontent.com/a/macros/idahostatesman.com/echo?user_content_key=AehSKLhVmP98gRml3OOgBzjmOpQ7Vm75rDOC_lQ2FMxNREPmzBqzmxZYonc1NnrmHmrng5ENr0YW4FoCqLbmVI65iKVR2sLBHtF6TZQoaDhhC92k75Xuwpy_M0WVIbUfM1Rw255QD2j8nfMYYmM1WmkFQN6smjYq0SVG84WOHTquYTgMyD08MBW79Zw7ohCk7_UjWKkbSENqbqlayILiiSr4x0q9Jr5aWMHIlZDTLlm4WRHCTAVB62F3i-a57_JUZ8BMBlTFABTn62Lsa4l5TvZ0HjEE0ALtBh00KlQYO6kUOTeuNIRasggGwjM8GthReA&lib=M31nNDai410zvYaHZ4Pp4gKaDfETvgIFd";
+  const JSON_URL = "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTxzJbXURWz1mlE6AxT4sYISMwjEyA0QoYOGt1bVNvn6XTS-QETJECo5LYC3zajxtvCpwuJl701kcgA-Q_kQm-Z9fDsbBJd9iQ6dQyFSG1iyl22uLwZCGVjUdWA98Cfhu06KbEgM4L27O6UisWAJKJ94N58_uZKQQrGEKgAsjLEsLcSyuzkTiXOotsr5WKKM1R3HtGMUuR_07YLT4hRBusH4YhAL4UoqSQj_1WDCsizAR3ZhEtCC-eUSVNBB5WoiEkw9XarNoSVOCBnwBX6HecQc3hrjw&lib=MrNG-yONKM4TLUAB2VieHRrV78Ddeyst8";
 
   // CSV URL from Google Sheets "Publish to web" 
   // Replace this with your actual published CSV URL
