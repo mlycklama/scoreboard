@@ -21,9 +21,15 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
       
       // Fetch fresh data
-      const response = await fetch(
-        "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTxzJbXURWz1mlE6AxT4sYISMwjEyA0QoYOGt1bVNvn6XTS-QETJECo5LYC3zajxtvCpwuJl701kcgA-Q_kQm-Z9fDsbBJd9iQ6dQyFSG1iyl22uLwZCGVjUdWA98Cfhu06KbEgM4L27O6UisWAJKJ94N58_uZKQQrGEKgAsjLEsLcSyuzkTiXOotsr5WKKM1R3HtGMUuR_07YLT4hRBusH4YhAL4UoqSQj_1WDCsizAR3ZhEtCC-eUSVNBB5WoiEkw9XarNoSVOCBnwBX6HecQc3hrjw&lib=MrNG-yONKM4TLUAB2VieHRrV78Ddeyst8"
-      );
+  const response = await fetch(
+    "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnRaAjy4E-PyAOMg9bfcNopB5BkSuVqzc3T8mkI0vF5qhso69IRTAiFj9smd--9OZR7atqPocM7iTyjUSaRxmeGg5dz2wPQzq_dT1quRPaos7RXCXsoA3Zd6GZmsiyC7YSx5TD2QNvjjKz4D9oK0SAcBz8TVq_g1fkDmsKtilMC3lQk8nvOVFy6OGqLKL4gYRTFxck8kdPwEfRTmxzxApNbqjJcfDRh4sKqj8jU2aDgC4HUAp3g6PVANki4qJEhL27ObXg_RqK29nM5DgvrL90zpnByuNA&lib=MrNG-yONKM4TLUAB2VieHRrV78Ddeyst8",
+    {
+      redirect: "follow",
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+      }
+    }
+  );
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
