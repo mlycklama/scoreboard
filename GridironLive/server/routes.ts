@@ -22,7 +22,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Fetch fresh data
   const response = await fetch(
-    "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnRaAjy4E-PyAOMg9bfcNopB5BkSuVqzc3T8mkI0vF5qhso69IRTAiFj9smd--9OZR7atqPocM7iTyjUSaRxmeGg5dz2wPQzq_dT1quRPaos7RXCXsoA3Zd6GZmsiyC7YSx5TD2QNvjjKz4D9oK0SAcBz8TVq_g1fkDmsKtilMC3lQk8nvOVFy6OGqLKL4gYRTFxck8kdPwEfRTmxzxApNbqjJcfDRh4sKqj8jU2aDgC4HUAp3g6PVANki4qJEhL27ObXg_RqK29nM5DgvrL90zpnByuNA&lib=MrNG-yONKM4TLUAB2VieHRrV78Ddeyst8",
+    "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTJ_qZTZUn0SM7OrdoAIPEbWD_mMIj0Hm-UQGYXvQaugeaQTDuMYVT5HkOAYKE6ZlokOvVZg61Rt_jWEYxhM4-hRzbEEaPDR4IIIz8E3HgprUE3dhYXr682vLJ6IQvJ5zlUD3zkZJIyTfXsPyrlz_IQFRH_FVTl3LG_EiFiGUT0txhtozVBLS1k_hZahYhTeil09JSMgBEukY7Hi_PBmw4GUkVlzfThe86GKGLD15g0smEWYvT6MGPmJgdYF5NeOmutTBlW5jiDCQAGf1ru7mCaFfN62Q&lib=M-W1NRdieBniXd9aY5qAN1KaDfETvgIFd",
     {
       redirect: "follow",
       headers: {
