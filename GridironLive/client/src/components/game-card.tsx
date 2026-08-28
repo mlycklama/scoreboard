@@ -5,8 +5,8 @@ interface GameCardProps {
 }
 
 function generateTeamLogoUrl(teamName: string): string {
-  // Use the exact team name as it appears in the data
-  return `https://media.idahostatesman.com/static/media/thumb/${teamName}.png`;
+  // Logo files are named to match the exact team name as it appears in the data
+  return `/logos/${encodeURI(teamName)}.png`;
 }
 
 function generateTeamInitials(teamName: string): string {
