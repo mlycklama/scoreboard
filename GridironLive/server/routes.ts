@@ -22,7 +22,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Fetch fresh data
   const response = await fetch(
-    "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnTJ_qZTZUn0SM7OrdoAIPEbWD_mMIj0Hm-UQGYXvQaugeaQTDuMYVT5HkOAYKE6ZlokOvVZg61Rt_jWEYxhM4-hRzbEEaPDR4IIIz8E3HgprUE3dhYXr682vLJ6IQvJ5zlUD3zkZJIyTfXsPyrlz_IQFRH_FVTl3LG_EiFiGUT0txhtozVBLS1k_hZahYhTeil09JSMgBEukY7Hi_PBmw4GUkVlzfThe86GKGLD15g0smEWYvT6MGPmJgdYF5NeOmutTBlW5jiDCQAGf1ru7mCaFfN62Q&lib=M-W1NRdieBniXd9aY5qAN1KaDfETvgIFd",
+    "https://script.googleusercontent.com/macros/echo?user_content_key=AUkAhnRNKQ9bcQ8Ei_alOkyq-3dOKaFjU0m6gUSw1cdZoR7dbPnt38b_kLUIvFpUqcKvYWr7pMbtPnmc7v3oWqjDi7QYEE4g7XiiVK0Q6teU9RrshOMd9pwaturzliCmWBRPIK2rLwP2n68n8pCA0VNLe3B3AI9HKhMuVWdJCy3cHbPRsX1K1F6s9nXob_OuBAyzfuDiAPszWHGciSJj083t5FzJllWV81UGToiqFDvHo-QTL2WfaKysK4i9Vepin2QmmXXiop5W-RL_8VU_XZwq67wyqnj9Sg&lib=M-W1NRdieBniXd9aY5qAN1KaDfETvgIFd",
     {
       redirect: "follow",
       headers: {
